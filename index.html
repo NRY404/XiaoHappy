@@ -38,11 +38,12 @@
     $('#login-button').click(function (event) {
         var userName=document.getElementById("userName").value;
         var pwd=document.getElementById("pwd").value;
-        if(userName=="肖梦娟"){
-            event.preventDefault();
-            $('form').fadeOut(500);
-            $('.wrapper').addClass('form-success');
-            setTimeout(function(){location.href="index1.html";},2000);
+        if(userName=="肖梦娟"||userName!="肖梦娟"){
+//             event.preventDefault();
+//             $('form').fadeOut(500);
+//             $('.wrapper').addClass('form-success');
+//             setTimeout(function(){location.href="index1.html";},2000);
+            alert("You have no permission to view next page! FORBIDDEN！");
         }
         else{
             alert("Wrong Password");
